@@ -2,61 +2,41 @@ var w = window.innerWidth - 300, h = window.innerWidth - 300;
 
 var colorscale = d3.scale.category10();
 
-var LegendOptions = ['Principal Developer', 'Architect', 'Development Lead', 'Development Manager', 'Head Of Delivery'];
+var LegendOptions = ['Senior Quality Analyst', 'Principal Quality Analyst', 'Development Lead', 'Data Analyst'];
 
-var d = [
-		  [
-        {axis: "Stakeholder Management", value: 0.05},
-        {axis: "Driving Morale", value: 0.1},
-        {axis: "Supporting Crew", value: 0.15},
-        {axis: "Organisation Thinking", value: 0.05},
-        {axis: "Systems Thinking", value: 0.1},
-        {axis: "Implementation Thinking", value: 0.2},
-        {axis: "Experimenting with Technology", value: 0.15},
-        {axis: "Developing Supporting Software", value: 0.15},
-        {axis: "Developing Software", value: 0.05}
+var d = [[
+        {axis: "Manual Testing", value: 0.75},
+        {axis: "Advocacy", value: 0.1},
+        {axis: "Quality Assurance", value: 0.15},
+        {axis: "Strategic Thinking", value: 0.0},
+        {axis: "Performance Testing", value: 0.0},
+        {axis: "Test Automation", value: 0.0},
+        {axis: "Leadership", value: 0.0}
 		  ],[
-        {axis: "Stakeholder Management", value: 0.2},
-        {axis: "Driving Morale", value: 0.05},
-        {axis: "Supporting Crew", value: 0.05},
-        {axis: "Organisation Thinking", value: 0.1},
-        {axis: "Systems Thinking", value: 0.4},
-        {axis: "Implementation Thinking", value: 0.1},
-        {axis: "Experimenting with Technology", value: 0.1},
-        {axis: "Developing Software", value: 0.0},
-        {axis: "Developing Supporting Software", value: 0.0}
+        {axis: "Manual Testing", value: 0.05},
+        {axis: "Advocacy", value: 0.3},
+        {axis: "Quality Assurance", value: 0.25},
+        {axis: "Strategic Thinking", value: 0.1},
+        {axis: "Performance Testing", value: 0.05},
+        {axis: "Test Automation", value: 0.05},
+        {axis: "Leadership", value: 0.2}
 		  ],[
-        {axis: "Stakeholder Management", value: 0.15},
-        {axis: "Driving Morale", value: 0.25},
-        {axis: "Supporting Crew", value: 0.4},
-        {axis: "Organisation Thinking", value: 0.15},
-        {axis: "Systems Thinking", value: 0.025},
-        {axis: "Implementation Thinking", value: 0.025},
-        {axis: "Experimenting with Technology", value: 0.0},
-        {axis: "Developing Supporting Software", value: 0.0},
-        {axis: "Developing Software", value: 0.0}
-      ],[
-        {axis: "Stakeholder Management", value: 0.1},
-        {axis: "Driving Morale", value: 0.3},
-        {axis: "Supporting Crew", value: 0.2},
-        {axis: "Organisation Thinking", value: 0.3},
-        {axis: "Systems Thinking", value: 0.05},
-        {axis: "Implementation Thinking", value: 0.05},
-        {axis: "Experimenting with Technology", value: 0.0},
-        {axis: "Developing Supporting Software", value: 0.0},
-        {axis: "Developing Software", value: 0.0}
-      ],[
-        {axis: "Stakeholder Management", value: 0.3},
-        {axis: "Driving Morale", value: 0.1},
-        {axis: "Supporting Crew", value: 0.0},
-        {axis: "Organisation Thinking", value: 0.3},
-        {axis: "Systems Thinking", value: 0.3},
-        {axis: "Implementation Thinking", value: 0.0},
-        {axis: "Experimenting with Technology", value: 0.0},
-        {axis: "Developing Supporting Software", value: 0.0},
-        {axis: "Developing Software", value: 0.0}
-      ]
-		];
+        {axis: "Manual Testing", value: 0.05},
+        {axis: "Advocacy", value: 0.1},
+        {axis: "Quality Assurance", value: 0.15},
+        {axis: "Strategic Thinking", value: 0.3},
+        {axis: "Performance Testing", value: 0.0},
+        {axis: "Test Automation", value: 0.0},
+        {axis: "Leadership", value: 0.4}
+      		  ],[
+        {axis: "Manual Testing", value: 0.55},
+        {axis: "Advocacy", value: 0.1},
+        {axis: "Quality Assurance", value: 0.1},
+        {axis: "Strategic Thinking", value: 0.1},
+        {axis: "Performance Testing", value: 0.05},
+        {axis: "Test Automation", value: 0.05},
+        {axis: "Leadership", value: 0.05}
+]];
 
 var mycfg = {
   w: w,
