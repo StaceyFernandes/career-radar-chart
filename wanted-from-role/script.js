@@ -6,15 +6,13 @@ var LegendOptions = ['Sean Van Osselaer'];
 
 var d = [
 		  [
-			{axis: "Stakeholder Management", value: 0.05},
-			{axis: "Driving Morale", value: 0.2},
-			{axis: "Supporting Crew", value: 0.1},
-			{axis: "Organisation Thinking", value: 0.15},
-			{axis: "Systems Thinking", value: 0.2},
-			{axis: "Implementation Thinking", value: 0.1},
-			{axis: "Experimenting with Technology", value: 0.15},
-			{axis: "Developing Supporting Software", value: 0.05},
-			{axis: "Developing Software", value: 0.0}
+        {axis: "Manual Testing", value: 0.05},
+        {axis: "Advocacy", value: 0.5},
+        {axis: "Quality Assurance", value: 0.15},
+        {axis: "Strategic Thinking", value: 0.1},
+        {axis: "Performance Testing", value: 0.05},
+        {axis: "Test Automation", value: 0.05},
+        {axis: "Leadership", value: 0.1}
 		  ]
 		];
 
