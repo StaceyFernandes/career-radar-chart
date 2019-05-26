@@ -2,7 +2,7 @@ var w = window.innerWidth - 300, h = window.innerWidth - 300;
 
 var colorscale = d3.scale.category10();
 
-var LegendOptions = ['Senior Quality Analyst', 'Principal Quality Analyst', 'Development Lead', 'Data Analyst'];
+var LegendOptions = ['Developer', 'Development Lead', 'Data Analyst'];
 
 var d = [[
         {axis: "Manual Testing", value: 0.75},
